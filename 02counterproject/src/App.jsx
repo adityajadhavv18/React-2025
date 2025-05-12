@@ -20,6 +20,10 @@ function App() {
     counter = counter - 1
     setCounter(counter)
   }
+
+  if (counter < 0) {
+    counter = 1
+  } 
   return (
     <>
      <h1>Hello there</h1>
